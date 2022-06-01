@@ -31,6 +31,7 @@ namespace MercadoDaIsaEWill
         public void Menu()
         {
             Console.Clear();//Limpar a tela do console
+            Console.WriteLine("\n\n ~~~~~~~~~~~~~~~~~~~~~ MENU PRODUTO ~~~~~~~~~~~~~~~~~~~~~~~~ \n\n");
             Console.WriteLine("\n\nEscolha uma das opções abaixo:\n\n" +
             "1. Cadastrar Produto\n" +
             "2. Consultar\n" +
@@ -59,7 +60,7 @@ namespace MercadoDaIsaEWill
                 switch (AcessarOpcao)
                 {
                     case 0:
-                        Console.WriteLine("Obrigado!");
+                        Console.WriteLine("Obrigado! Você saiu do Menu Produto");
                         break;
 
 

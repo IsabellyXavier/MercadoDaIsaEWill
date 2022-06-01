@@ -31,6 +31,7 @@ namespace MercadoDaIsaEWill
         public void Menu()
         {
             Console.Clear();//Limpar a tela do console
+            Console.WriteLine("\n\n ~~~~~~~~~~~~~~~~~~~~~ MENU CLIENTE ~~~~~~~~~~~~~~~~~~~~~~~~ \n\n");
             Console.WriteLine("\n\nEscolha uma das opções abaixo:\n\n" +
             "1. Cadastrar Cliente\n" +
             "2. Consultar\n" +
@@ -59,7 +60,7 @@ namespace MercadoDaIsaEWill
                 switch (AcessarOpcao)
                 {
                     case 0:
-                        Console.WriteLine("Obrigado!");
+                        Console.WriteLine("Obrigado! Você saiu do Menu Cliente");
                         break;
 
 
@@ -171,7 +172,7 @@ namespace MercadoDaIsaEWill
                         Console.WriteLine("Informe um sexo biologico: ");
                         sexobiologico = Console.ReadLine();
                         //Utilizar o método da classe model
-                        Console.WriteLine(cliente.AtualizarEndereco(codigo, sexobiologico));
+                        Console.WriteLine(cliente.AtualizarSexoBiologico(codigo, sexobiologico));
                         break;
 
                     case 8:
@@ -185,7 +186,7 @@ namespace MercadoDaIsaEWill
                         Console.WriteLine("Informe um email: ");
                         email = Console.ReadLine();
                         //Utilizar o método da classe model
-                        Console.WriteLine(cliente.AtualizarEndereco(codigo, email));
+                        Console.WriteLine(cliente.AtualizarEmail(codigo, email));
                         break;
 
                     case 9:
@@ -199,7 +200,7 @@ namespace MercadoDaIsaEWill
                         Console.WriteLine("Informe uma quantidade de compras: ");
                         quantidadedecompras = Console.ReadLine();
                         //Utilizar o método da classe model
-                        Console.WriteLine(cliente.AtualizarEndereco(codigo, quantidadedecompras));
+                        Console.WriteLine(cliente.AtualizarQuantidadeDeCompras(codigo, quantidadedecompras));
                         break;
 
                     case 10:

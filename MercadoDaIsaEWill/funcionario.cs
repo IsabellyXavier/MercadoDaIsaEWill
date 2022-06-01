@@ -68,7 +68,7 @@ namespace MercadoDaIsaEWill
             {
                 this.nome = value;
             }
-        }//fim do método de AcessarNome
+        }//fim do método de AcessarNome0
 
 
 
